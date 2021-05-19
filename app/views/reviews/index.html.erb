@@ -1,0 +1,8 @@
+<h2>Ratings:</h2>
+<%= link_to 'Go back to restaurant', @restaurant, class: 'btn btn-primary' %>
+<%= link_to 'Go back to restaurants', restaurants_path, class: 'btn btn-primary' %>
+ <% @reviews.each do |review| %>
+ <p><%= review.content %></p>
+ <p><%= review.rating %></p>
+ <% end %>
+
